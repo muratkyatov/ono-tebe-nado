@@ -31,11 +31,11 @@
 }
 
 .header__link {
-   text-decoration: none;
+   text-decoration: underline;
 }
 
 .header__link_active {
-   text-decoration: underline;
+   text-decoration: none;
 }
 
 .cover {
@@ -43,13 +43,9 @@
    background-image: url('../images/cover.jpg');
    background-size: cover;
    background-position: center;
-   /* margin-left: auto;
-   margin-right: auto; */
    width: 1440px;
    height: 757px;
-   /* flex-direction: column; */
    position: relative;
-   
 }
 
 .overlay {
@@ -96,7 +92,6 @@
    text-align: center;
    margin-left: 50px;
    margin-right: 110px;
-   text-align: end;
 }
 
 .aligned-text_right {
@@ -109,7 +104,6 @@
    padding-right: 0;
    align-self: flex-end;
    letter-spacing: 0.6em;
-   text-align: end;
 }
 
 .letter-spacing-extended {
@@ -125,11 +119,13 @@
    display: flex;
    align-items: center;
    z-index: 1;
-   position: relative;
-   margin-top: auto;
-   margin-bottom: 62px;
+   position: absolute;
+   /* height: 28px; */
+   /* width: 1340px; */
    opacity: 0.6;
    text-transform: uppercase;
+   margin-top: 667px;
+   margin-left: 50px;
 }
 
 .cover__description-text {
@@ -140,28 +136,34 @@
    font-size: 21px;
    font-family: Raleway, sans-serif; 
    font-style: normal;
+   line-height: 28px;
    font-weight: 400;
    text-align: center;
    max-width: 633px;
    max-height: 28px;
    margin-right: 78px;
    margin-left: 422px;
+   position: relative;
 }
 
 .bet-button {
-   display: flex;
-   justify-self: center;
+   /* display: flex; */
+   justify-content: end;
    background-color: transparent;
    -webkit-appearance: none;
-   width: 193px;
-   height: 28px;
-   text-align:center;
+   /* width: 193px;
+   height: 28px; */
    font-size: 20px;
    font-family: Raleway, sans-serif;
    font-weight: 400;
+   /* line-height: normal; */
    color: #fff;
-   margin: auto;
+   padding: 12px 32px;
    text-transform: uppercase;
+   position: relative;
+   /* padding-left: 110px; */
+   justify-content: end;
+   
 }
 
 .lots {
@@ -286,7 +288,6 @@
    margin-bottom: 50px;
    margin-left: 40px;
    margin-right: 40px;
-   margin-top: auto;
    text-align: start;
    color: #FFF;
    font-family: Raleway, sans-serif;
@@ -429,9 +430,6 @@ width: 240px;
 height: 48px;
 gap: 30px;
 list-style-type: none;
-}
-
-.footer__social-icon {
 }
 
 .footer__menu-icon {
