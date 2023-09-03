@@ -1,16 +1,14 @@
-@media (min-width: 1100px) {
-   .header {
-      display: grid;
-      grid-auto-flow: column;
-      margin-top: 92px;
-      margin-right: auto;
-      margin-bottom: 92px;
-      margin-left: auto;
-      max-width: 1340px;
-      min-width: 1100px;
-      grid-template-columns: repeat(3, 1fr);
-      align-items: center;
-   }
+.header {
+   display: grid;
+   grid-auto-flow: column;
+   margin-top: 92px;
+   margin-right: auto;
+   margin-bottom: 92px;
+   margin-left: auto;
+   max-width: 1340px;
+   min-width: 1100px;
+   grid-template-columns: repeat(3, 1fr);
+   align-items: center;
 }
 
 .header__links-list {
@@ -36,11 +34,12 @@
    font-style: normal;
    text-decoration: underline;
    color: #000;
-   font-family: Raleway;
+   font-family: Raleway, sans-serif, Arial;
    font-size: 18px;
    font-style: normal;
    font-weight: 400;
    line-height: 24.3px;
+   max-width: 240px;
 }
 
 .address {
@@ -54,7 +53,7 @@
 .header__link {
    text-decoration: underline;
    color: #000;
-   font-family: Raleway;
+   font-family: Raleway, sans-serif, Arial;
    font-size: 18px;
    font-style: normal;
    font-weight: 400;
@@ -71,16 +70,15 @@
    min-height: 100%;
 }
 
-@media (min-width: 1100px) {
-   .cover {
-      display: flex;
-      background-image: url("../images/cover.jpg");
-      background-size: cover;
-      background-position: center;
-      max-width: 1440px;
-      min-height: 757px;
-      position: relative;
-   }
+.cover {
+   display: flex;
+   background-image: url("../images/cover.jpg");
+   background-size: cover;
+   background-position: center;
+   max-width: 1440px;
+   min-width: 1100px;
+   min-height: 757px;
+   position: relative;
 }
 
 .overlay {
@@ -98,7 +96,7 @@
 
 .cover__title {
    display: flex;
-   position: absolute;
+   position: relative;
    color: #fff;
    font-size: 100px;
    font-weight: 700;
@@ -136,10 +134,10 @@
 
 .aligned-text_right {
    display: flex;
-   width: 1340px;
+   max-width: 1340px;
    line-height: 100%;
    justify-content: end;
-   margin-left: 50px;
+   margin-left: 973px;
    margin-right: 50px;
    align-self: flex-end;
    letter-spacing: 0.6em;
@@ -160,7 +158,7 @@
    position: relative;
    text-transform: uppercase;
    margin-top: 615px;
-   margin-left: 43px;
+   margin-left: -1400px;
 }
 
 .cover__description-text {
@@ -169,7 +167,7 @@
    color: #fff;
    text-transform: uppercase;
    font-size: 21px;
-   font-family: Raleway, sans-serif;
+   font-family: Raleway, sans-serif, Arial;
    font-style: normal;
    line-height: 28px;
    font-weight: 400;
@@ -185,37 +183,36 @@
    background-color: transparent;
    -webkit-appearance: none;
    font-size: 20px;
-   font-family: Raleway, sans-serif;
+   font-family: Raleway, sans-serif, Arial;
    font-weight: 400;
    color: #fff;
-   padding: 12px 32px;
+   padding: 12px 40px;
    text-transform: uppercase;
    position: relative;
    margin-left: 100px;
    justify-content: end;
-   border-color: #fff;
    text-align: center;
+   border: 1px solid #fff;
 }
 
-@media (min-width: 1100px) {
-   .lots {
-      display: flex;
-      flex-wrap: wrap;
-      flex-grow: 1;
-      flex-direction: column;
-      margin-left: auto;
-      margin-right: 48px;
-      margin-top: 183px;
-      width: 1340px;
-      height: 100%;
-      position: relative;
-   }
+.lots {
+   display: flex;
+   flex-wrap: wrap;
+   flex-grow: 1;
+   flex-direction: column;
+   margin-left: auto;
+   margin-right: 48px;
+   margin-top: 183px;
+   max-width: 1340px;
+   min-width: 1100px;
+   height: 100%;
+   position: relative;
 }
 
 .lots__heading {
    justify-self: flex-start;
    color: #000;
-   font-family: Raleway, sans-serif;
+   font-family: Raleway, sans-serif, Arial;
    flex-direction: column;
    margin-left: 40px;
    margin-bottom: 27px;
@@ -294,7 +291,7 @@
    margin-top: 50px;
    margin-left: 40px;
    margin-right: 40px;
-   font-family: Raleway, sans-serif;
+   font-family: Raleway, sans-serif, Arial;
    font-size: 22px;
    font-style: normal;
    font-weight: 700;
@@ -312,7 +309,7 @@
    margin-right: 40px;
    text-align: start;
    color: #fff;
-   font-family: Raleway, sans-serif;
+   font-family: Raleway, sans-serif, Arial;
    font-size: 20px;
    font-style: normal;
    font-weight: 400;
@@ -327,26 +324,24 @@
    margin-top: 28px;
    margin-left: 40px;
    color: #000;
-   font-family: Raleway, sans-serif;
+   font-family: Raleway, sans-serif, Arial;
    font-size: 20px;
    font-style: normal;
    font-weight: 400;
 }
 
-@media (min-width: 1100px) {
-   .about {
-      display: flex;
-      justify-content: space-between;
-      max-width: 1340px;
-      min-width: 1100px;
-      height: 100%;
-      margin-right: auto;
-      margin-left: auto;
-      margin-top: 182px;
-      position: relative;
-      align-content: center;
-      gap: 25px;
-   }
+.about {
+   display: flex;
+   justify-content: space-between;
+   max-width: 1340px;
+   min-width: 1100px;
+   height: 100%;
+   margin-right: auto;
+   margin-left: auto;
+   margin-top: 182px;
+   position: relative;
+   align-content: center;
+   gap: 25px;
 }
 
 .about__logo-column {
@@ -388,7 +383,7 @@
    display: inline-flex;
    flex-direction: row;
    color: #000;
-   font-family: Raleway, sans-serif;
+   font-family: Raleway, sans-serif, Arial;
    font-size: 40px;
    font-weight: 700;
    text-transform: uppercase;
@@ -409,7 +404,7 @@
    max-width: 960px;
    height: 100%;
    color: #000;
-   font-family: Raleway, sans-serif;
+   font-family: Raleway, sans-serif, Arial;
    font-size: 20px;
    font-style: normal;
    font-weight: 400;
@@ -417,26 +412,25 @@
    padding-left: 73px;
 }
 
-@media (min-width: 1100px) {
-   .footer {
-      display: grid;
-      grid-template-rows: 1fr;
-      grid-template-columns: repeat(3, 1fr);
-      max-width: 1340px;
-      align-items: center;
-      font-family: Raleway, sans-serif, Arial;
-      font-size: 18px;
-      font-style: normal;
-      font-weight: 400;
-      margin: auto;
-      padding-top: 145px;
-      min-width: 1100px;
-      padding-bottom: 90px;
-   }
+.footer {
+   display: grid;
+   grid-template-rows: 1fr;
+   grid-template-columns: repeat(3, 1fr);
+   max-width: 1340px;
+   align-items: center;
+   font-family: Raleway, sans-serif, Arial;
+   font-size: 18px;
+   font-style: normal;
+   font-weight: 400;
+   margin: auto;
+   padding-top: 145px;
+   min-width: 1100px;
+   padding-bottom: 90px;
 }
 
 .footer__address {
    font-style: normal;
+   max-width: 240px;
 }
 
 .footer__menu {
